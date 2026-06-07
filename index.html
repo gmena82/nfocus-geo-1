@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TraxSolutions Day 1 AEO/GEO Report</title>
-  <meta name="description" content="TraxSolutions Day 1 selected-surface AEO/GEO report with prompt set, Google query set, competitor landscape, risks, source quality, and sprint plan." />
+  <title>TraxSolutions Day 1 AEO/GEO Executive Summary</title>
+  <meta name="description" content="Executive summary for the TraxSolutions Day 1 selected-surface AEO/GEO report." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,18 +14,16 @@
 <body>
   <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a class="brand" href="#top" aria-label="TraxSolutions Day 1 report home">
+      <a class="brand" href="index.html" aria-label="TraxSolutions Day 1 report home">
         <span class="brand__mark">n</span>
         <span class="brand__name">nFocus<span>&middot;</span>TraxSolutions</span>
       </a>
       <nav class="nav__links" aria-label="Report navigation">
-        <a href="#questions">Questions</a>
-        <a href="#competitors">Competitors</a>
-        <a href="#findings">Findings</a>
-        <a href="#risks">Risks</a>
-        <a href="#plan">Plan</a>
+        <a aria-current="page" href="index.html">Summary</a>
+        <a href="results.html">Results</a>
+        <a href="deliverables.html">Deliverables</a>
       </nav>
-      <a class="btn btn--primary" href="#decision">Decision</a>
+      <a class="btn btn--primary" href="results.html">View Results</a>
     </div>
   </header>
 
@@ -41,28 +39,28 @@
         <div class="hero__overlay hero__overlay--grid"></div>
       </div>
       <div class="container hero__content">
-        <div class="hero__eyebrow"><span class="hero__dot"></span> Day 1 selected-surface AEO/GEO report</div>
+        <div class="hero__eyebrow"><span class="hero__dot"></span> Executive summary</div>
         <h1 id="hero-title" class="hero__title">TraxSolutions is visible, but not yet <em>consistently recommendable.</em></h1>
         <p class="hero__statement">Baseline: <strong>63/100, Mixed</strong>. The issue is not simple invisibility. It is shortlist control, factual control, and source control across buyer-stage AI/search questions.</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#questions">See the prompt set</a>
-          <a class="btn btn--ghost" href="#plan">Review sprint plan</a>
+          <a class="btn btn--primary" href="results.html">Review testing results</a>
+          <a class="btn btn--ghost" href="deliverables.html">See deliverables timeline</a>
         </div>
         <div class="hero__outcomes" aria-label="Report facts">
           <article class="outcome reveal">
+            <div class="outcome__stat">63/100</div>
+            <div class="outcome__label">Mixed baseline</div>
+            <p class="outcome__note">A selected-surface Day 1 baseline, not a universal AEO/GEO score.</p>
+          </article>
+          <article class="outcome reveal">
             <div class="outcome__stat">31</div>
-            <div class="outcome__label">Questions and Google queries</div>
+            <div class="outcome__label">Questions and queries</div>
             <p class="outcome__note">11 selected NF prompts plus the 20-query Google Search / AI Overview set.</p>
           </article>
           <article class="outcome reveal">
-            <div class="outcome__stat">6</div>
-            <div class="outcome__label">Observed surfaces</div>
-            <p class="outcome__note">Google Search / AI Overview, ChatGPT Search, Perplexity, Brave Search, Copilot/Bing, and Gemini Free / Flash.</p>
-          </article>
-          <article class="outcome reveal">
-            <div class="outcome__stat">8</div>
-            <div class="outcome__label">Factual-risk items</div>
-            <p class="outcome__note">Buyer-risk gaps, wrong-entity sources, proof caveats, PDF handling, and payment routing.</p>
+            <div class="outcome__stat">30-45</div>
+            <div class="outcome__label">Day sprint</div>
+            <p class="outcome__note">Answer-readiness work after leadership signoff and fact-sheet approval.</p>
           </article>
         </div>
       </div>
@@ -70,14 +68,14 @@
 
     <section class="proof" aria-label="Report baseline metrics">
       <div class="container proof__inner">
-        <div class="proof__item reveal"><div class="proof__value">63/100</div><div class="proof__label">Selected-surface Day 1 baseline</div></div>
-        <div class="proof__item reveal"><div class="proof__value">11 + 20</div><div class="proof__label">NF prompts + Google queries</div></div>
+        <div class="proof__item reveal"><div class="proof__value">6</div><div class="proof__label">Observed answer/search surfaces</div></div>
+        <div class="proof__item reveal"><div class="proof__value">18</div><div class="proof__label">Competitor/source-lane cards</div></div>
         <div class="proof__item reveal"><div class="proof__value">10</div><div class="proof__label">Confidence findings</div></div>
-        <div class="proof__item reveal"><div class="proof__value">11</div><div class="proof__label">Implementation tickets</div></div>
+        <div class="proof__item reveal"><div class="proof__value">8</div><div class="proof__label">Factual-risk items</div></div>
       </div>
     </section>
 
-    <section class="section summary" id="verdict" aria-labelledby="verdict-title">
+    <section class="section summary" aria-labelledby="verdict-title">
       <div class="container report-lede">
         <div class="section-head">
           <span class="eyebrow">Executive verdict</span>
@@ -92,78 +90,34 @@
       </div>
     </section>
 
-    <section class="section questions" id="questions" aria-labelledby="questions-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Questions and keywords</span>
-          <h2 class="section-title" id="questions-title">The actual prompt and query set used for the report.</h2>
-          <p class="section-lead">This is the reporting core: the branded, category, comparison, proof, buyer-risk, source-routing, and Google AI Overview queries that shaped the Day 1 baseline.</p>
+    <section class="section split" aria-labelledby="read-title">
+      <div class="container split__grid">
+        <div>
+          <span class="eyebrow">How to read this report</span>
+          <h2 class="section-title" id="read-title">Three pages, three jobs.</h2>
+          <p class="section-lead">The report is split so leadership can review the decision first, inspect the evidence second, and approve the implementation path third.</p>
         </div>
-        <div class="table-wrap report-table">
-          <table>
-            <thead><tr><th>ID</th><th>Question / keyword query</th><th>Intent</th><th>Competitor set</th><th>Finding note</th></tr></thead>
-            <tbody id="promptRows"></tbody>
-          </table>
+        <div class="card-list">
+          <a class="feature reveal" href="index.html">
+            <span class="feature__tag">Page 1</span>
+            <h3>Executive summary</h3>
+            <p>Baseline, narrative verdict, what is working, what is exposed, caveats, and final decision request.</p>
+          </a>
+          <a class="feature reveal" href="results.html">
+            <span class="feature__tag">Page 2</span>
+            <h3>Testing results</h3>
+            <p>GEO questions, Google keyword queries, competitor sets, confidence findings, source quality, and factual-risk register.</p>
+          </a>
+          <a class="feature reveal" href="deliverables.html">
+            <span class="feature__tag">Page 3</span>
+            <h3>Deliverables and timeline</h3>
+            <p>Implementation tickets, 30-45 day sprint sequence, approval dependencies, fact-sheet gates, and retest assumptions.</p>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section competitors" id="competitors" aria-labelledby="competitors-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Competitor landscape</span>
-          <h2 class="section-title" id="competitors-title">Who repeatedly frames the category around TraxSolutions.</h2>
-          <p class="section-lead">Competitors are not treated as verified product claims. This is a visibility map of the named alternative/category sets used in the prompt inventory.</p>
-        </div>
-        <div class="competitor-grid" id="competitorGrid"></div>
-      </div>
-    </section>
-
-    <section class="section findings" id="findings" aria-labelledby="findings-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Confidence findings</span>
-          <h2 class="section-title" id="findings-title">What the evidence supports with confidence labels.</h2>
-          <p class="section-lead">These are the report findings that should have been in the page from the start.</p>
-        </div>
-        <div class="finding-grid" id="confidenceGrid"></div>
-      </div>
-    </section>
-
-    <section class="section source-quality" id="sources" aria-labelledby="sources-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Source quality scoring</span>
-          <h2 class="section-title" id="sources-title">Owned sources help. Weak and wrong-entity sources create risk.</h2>
-          <p class="section-lead">The report distinguishes owned-site strength from directory noise, profile uncertainty, competitor-controlled sources, and wrong-entity source risk.</p>
-        </div>
-        <div class="source-score-list" id="sourceRows"></div>
-      </div>
-    </section>
-
-    <section class="section risk" id="risks" aria-labelledby="risks-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Factual-risk register</span>
-          <h2 class="section-title" id="risks-title">Where answer systems can mislead buyers if owned facts stay incomplete.</h2>
-          <p class="section-lead">These are answer-surface behavior risks, not verified product facts. They are the reason the fact sheet comes before public copy.</p>
-        </div>
-        <div class="risk-list" id="riskRows"></div>
-      </div>
-    </section>
-
-    <section class="section plan" id="plan" aria-labelledby="plan-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">30-45 day answer-readiness sprint</span>
-          <h2 class="section-title" id="plan-title">The implementation tickets behind the recommendation.</h2>
-          <p class="section-lead">The sprint is not generic. It maps directly to the observed risks, prompt gaps, source-quality issues, and technical extraction blockers.</p>
-        </div>
-        <div class="ticket-list" id="ticketRows"></div>
-      </div>
-    </section>
-
-    <section class="section guardrails" id="guardrails" aria-labelledby="guardrails-title">
+    <section class="section guardrails" aria-labelledby="guardrails-title">
       <div class="container guardrails__grid">
         <div>
           <span class="eyebrow">Caveats and boundaries</span>
@@ -177,17 +131,14 @@
       </div>
     </section>
 
-    <section class="section decision" id="decision" aria-labelledby="decision-title">
+    <section class="section decision" aria-labelledby="decision-title">
       <div class="container decision__inner">
         <span class="eyebrow">Final decision requested</span>
-        <h2 class="section-title" id="decision-title">Approve fact-sheet collection and the scoped answer-readiness sprint.</h2>
+        <h2 class="section-title" id="decision-title">Approve the snapshot framing, sprint direction, and fact-sheet-first sequence.</h2>
         <p class="next__lead">Requested approval: use the Day 1 selected-surface snapshot and <strong>63/100, Mixed</strong> baseline with the caveats above; move forward with the 30-45 day answer-readiness sprint plan; collect the approved fact sheet before any external factual copy is published; treat website/CMS/source access as a later implementation step only after signoff and approved on-page scope.</p>
-        <div class="chips decision-chips">
-          <span>Pricing policy</span><span>Implementation / setup</span><span>Support model</span><span>Security / privacy / compliance</span><span>Integrations / API</span><span>Migration / import</span><span>HQ / entity details</span><span>Payment naming</span><span>PDF handling</span><span>Named customers</span><span>Outcome metrics</span>
-        </div>
         <div class="decision__actions">
-          <a class="btn btn--primary" href="#questions">Back to report data</a>
-          <a class="btn btn--ghost" href="#top">Return to snapshot</a>
+          <a class="btn btn--primary" href="results.html">Review evidence</a>
+          <a class="btn btn--ghost" href="deliverables.html">Review deliverables</a>
         </div>
       </div>
     </section>

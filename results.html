@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TraxSolutions Day 1 AEO/GEO Testing Results</title>
+  <meta name="description" content="Testing results for the TraxSolutions Day 1 selected-surface AEO/GEO report: questions, keywords, competitors, confidence findings, source quality, and risks." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="TraxSolutions Day 1 report home">
+        <span class="brand__mark">n</span>
+        <span class="brand__name">nFocus<span>&middot;</span>TraxSolutions</span>
+      </a>
+      <nav class="nav__links" aria-label="Report navigation">
+        <a href="index.html">Summary</a>
+        <a aria-current="page" href="results.html">Results</a>
+        <a href="deliverables.html">Deliverables</a>
+      </nav>
+      <a class="btn btn--primary" href="deliverables.html">Next: Deliverables</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="page-hero" aria-labelledby="results-title">
+      <div class="container page-hero__inner">
+        <span class="eyebrow">Testing results</span>
+        <h1 class="page-title" id="results-title">The GEO questions, keywords, competitors, rankings, and risks are here.</h1>
+        <p class="page-lead">This page is the evidence body of the report: 11 selected NF prompts, 20 Google Search / AI Overview queries, competitor/source-lane visibility, confidence findings, source-quality scoring, and factual-risk items.</p>
+      </div>
+    </section>
+
+    <section class="proof" aria-label="Testing payload counts">
+      <div class="container proof__inner">
+        <div class="proof__item reveal"><div class="proof__value">31</div><div class="proof__label">Questions and keyword queries</div></div>
+        <div class="proof__item reveal"><div class="proof__value">18</div><div class="proof__label">Competitor/source-lane cards</div></div>
+        <div class="proof__item reveal"><div class="proof__value">11</div><div class="proof__label">Source-quality rows</div></div>
+        <div class="proof__item reveal"><div class="proof__value">8</div><div class="proof__label">Factual-risk rows</div></div>
+      </div>
+    </section>
+
+    <section class="section questions" id="questions" aria-labelledby="questions-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Questions and keywords</span>
+          <h2 class="section-title" id="questions-title">The actual prompt and query set used for the report.</h2>
+          <p class="section-lead">This is the reporting core: the branded, category, comparison, proof, buyer-risk, source-routing, and Google AI Overview queries that shaped the Day 1 baseline.</p>
+        </div>
+        <div class="table-wrap report-table">
+          <table>
+            <thead><tr><th>ID</th><th>Question / keyword query</th><th>Intent</th><th>Competitor set</th><th>Finding note</th></tr></thead>
+            <tbody id="promptRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section competitors" id="competitors" aria-labelledby="competitors-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Competitor landscape</span>
+          <h2 class="section-title" id="competitors-title">Who repeatedly frames the category around TraxSolutions.</h2>
+          <p class="section-lead">Competitors are not treated as verified product claims. This is a visibility map of the named alternative/category sets used in the prompt inventory.</p>
+        </div>
+        <div class="competitor-grid" id="competitorGrid"></div>
+      </div>
+    </section>
+
+    <section class="section findings" id="findings" aria-labelledby="findings-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Confidence findings</span>
+          <h2 class="section-title" id="findings-title">What the evidence supports with confidence labels.</h2>
+          <p class="section-lead">These findings preserve the confidence level and source context from the report packet.</p>
+        </div>
+        <div class="finding-grid" id="confidenceGrid"></div>
+      </div>
+    </section>
+
+    <section class="section source-quality" id="sources" aria-labelledby="sources-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Source quality scoring</span>
+          <h2 class="section-title" id="sources-title">Owned sources help. Weak and wrong-entity sources create risk.</h2>
+          <p class="section-lead">The report distinguishes owned-site strength from directory noise, profile uncertainty, competitor-controlled sources, and wrong-entity source risk.</p>
+        </div>
+        <div class="source-score-list" id="sourceRows"></div>
+      </div>
+    </section>
+
+    <section class="section risk" id="risks" aria-labelledby="risks-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Factual-risk register</span>
+          <h2 class="section-title" id="risks-title">Where answer systems can mislead buyers if owned facts stay incomplete.</h2>
+          <p class="section-lead">These are answer-surface behavior risks, not verified product facts. They are the reason the fact sheet comes before public copy.</p>
+        </div>
+        <div class="risk-list" id="riskRows"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand"><span class="brand__mark">n</span> nFocus Solutions &middot; TraxSolutions</div>
+      <small>Internal/client-approval report artifact. Results are observed answer/search behavior, not unsupported public copy. No send, publish, CMS edit, retest, or credential request occurred.</small>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
