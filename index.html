@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TraxSolutions Day 1 AEO/GEO Approval Review</title>
-  <meta name="description" content="Internal approval microsite for the TraxSolutions Day 1 AEO/GEO selected-surface snapshot and 30-45 day answer-readiness sprint." />
+  <title>TraxSolutions Day 1 AEO/GEO Report</title>
+  <meta name="description" content="TraxSolutions Day 1 selected-surface AEO/GEO report with prompt set, Google query set, competitor landscape, risks, source quality, and sprint plan." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,17 +14,18 @@
 <body>
   <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a class="brand" href="#top" aria-label="TraxSolutions approval review home">
+      <a class="brand" href="#top" aria-label="TraxSolutions Day 1 report home">
         <span class="brand__mark">n</span>
         <span class="brand__name">nFocus<span>&middot;</span>TraxSolutions</span>
       </a>
-      <nav class="nav__links" aria-label="Section navigation">
-        <a href="#verdict">Verdict</a>
-        <a href="#sprint">Sprint</a>
-        <a href="#approval-path">Approval path</a>
-        <a href="#decision">Decision</a>
+      <nav class="nav__links" aria-label="Report navigation">
+        <a href="#questions">Questions</a>
+        <a href="#competitors">Competitors</a>
+        <a href="#findings">Findings</a>
+        <a href="#risks">Risks</a>
+        <a href="#plan">Plan</a>
       </nav>
-      <a class="btn btn--primary" href="#decision">Review ask</a>
+      <a class="btn btn--primary" href="#decision">Decision</a>
     </div>
   </header>
 
@@ -40,170 +41,138 @@
         <div class="hero__overlay hero__overlay--grid"></div>
       </div>
       <div class="container hero__content">
-        <div class="hero__eyebrow"><span class="hero__dot"></span> Approval review for Ananda / leadership</div>
-        <h1 id="hero-title" class="hero__title">TraxSolutions Day 1 AEO/GEO snapshot and <em>answer-readiness sprint.</em></h1>
-        <p class="hero__statement">Internal selected-surface Day 1 baseline: <strong>63/100, Mixed</strong>. The recommendation is a 30-45 day answer-readiness sprint after leadership signoff and fact-sheet approval.</p>
+        <div class="hero__eyebrow"><span class="hero__dot"></span> Day 1 selected-surface AEO/GEO report</div>
+        <h1 id="hero-title" class="hero__title">TraxSolutions is visible, but not yet <em>consistently recommendable.</em></h1>
+        <p class="hero__statement">Baseline: <strong>63/100, Mixed</strong>. The issue is not simple invisibility. It is shortlist control, factual control, and source control across buyer-stage AI/search questions.</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#decision">Approve direction</a>
-          <a class="btn btn--ghost" href="#guardrails">Review guardrails</a>
+          <a class="btn btn--primary" href="#questions">See the prompt set</a>
+          <a class="btn btn--ghost" href="#plan">Review sprint plan</a>
         </div>
-        <div class="hero__outcomes" aria-label="First-viewport facts">
+        <div class="hero__outcomes" aria-label="Report facts">
           <article class="outcome reveal">
-            <div class="outcome__stat">63/100</div>
-            <div class="outcome__label">Mixed baseline</div>
-            <p class="outcome__note">Selected-surface Day 1 score, not a universal AEO/GEO score.</p>
+            <div class="outcome__stat">31</div>
+            <div class="outcome__label">Questions and Google queries</div>
+            <p class="outcome__note">11 selected NF prompts plus the 20-query Google Search / AI Overview set.</p>
           </article>
           <article class="outcome reveal">
-            <div class="outcome__stat">30-45 days</div>
-            <div class="outcome__label">Answer-readiness sprint</div>
-            <p class="outcome__note">Technical retrieval, approved facts, proof clarity, and category authority.</p>
+            <div class="outcome__stat">6</div>
+            <div class="outcome__label">Observed surfaces</div>
+            <p class="outcome__note">Google Search / AI Overview, ChatGPT Search, Perplexity, Brave Search, Copilot/Bing, and Gemini Free / Flash.</p>
           </article>
           <article class="outcome reveal">
-            <div class="outcome__stat">Signoff first</div>
-            <div class="outcome__label">Access later</div>
-            <p class="outcome__note">Website/CMS/source access comes only after approved on-page scope.</p>
+            <div class="outcome__stat">8</div>
+            <div class="outcome__label">Factual-risk items</div>
+            <p class="outcome__note">Buyer-risk gaps, wrong-entity sources, proof caveats, PDF handling, and payment routing.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="proof" aria-label="Observed evidence surfaces">
+    <section class="proof" aria-label="Report baseline metrics">
       <div class="container proof__inner">
-        <div class="proof__item reveal">
-          <div class="proof__value">Google</div>
-          <div class="proof__label">Search / AI Overview</div>
-        </div>
-        <div class="proof__item reveal">
-          <div class="proof__value">ChatGPT</div>
-          <div class="proof__label">Search answer behavior</div>
-        </div>
-        <div class="proof__item reveal">
-          <div class="proof__value">Perplexity</div>
-          <div class="proof__label">Citation and retrieval surface</div>
-        </div>
-        <div class="proof__item reveal">
-          <div class="proof__value">Brave / Bing / Gemini</div>
-          <div class="proof__label">Selected Day 1 answer surfaces</div>
-        </div>
+        <div class="proof__item reveal"><div class="proof__value">63/100</div><div class="proof__label">Selected-surface Day 1 baseline</div></div>
+        <div class="proof__item reveal"><div class="proof__value">11 + 20</div><div class="proof__label">NF prompts + Google queries</div></div>
+        <div class="proof__item reveal"><div class="proof__value">10</div><div class="proof__label">Confidence findings</div></div>
+        <div class="proof__item reveal"><div class="proof__value">11</div><div class="proof__label">Implementation tickets</div></div>
       </div>
     </section>
 
     <section class="section summary" id="verdict" aria-labelledby="verdict-title">
-      <div class="container summary__grid">
+      <div class="container report-lede">
         <div class="section-head">
           <span class="eyebrow">Executive verdict</span>
-          <h2 class="section-title" id="verdict-title">Recognized, but not yet consistently recommendable.</h2>
-          <p class="section-lead">TraxSolutions already has meaningful answer-engine visibility. The gap is consistency across broader buyer-stage questions.</p>
+          <h2 class="section-title" id="verdict-title">Strong owned-source lanes. Weak broad-category and buyer-risk lanes.</h2>
+          <p class="section-lead">TraxSolutions is recognized as an nFocus product in branded and closely aligned prompts. The problem appears when buyers ask broader decision-stage questions: alternatives, category shortlists, implementation, pricing, integrations/API, support, security/privacy/compliance, and proof.</p>
         </div>
-        <div class="summary__blocks">
-          <article class="summary__block reveal">
-            <h3>Baseline caveat</h3>
-            <p><strong>63/100, Mixed</strong> is a selected-surface Day 1 baseline, not a universal AEO/GEO score. Supporting technical-readiness observations are context, not the basis for broad product scoring.</p>
-          </article>
-          <article class="summary__block reveal">
-            <h3>Evidence frame</h3>
-            <p>Evidence includes observed answer-surface behavior across Google Search / AI Overview, ChatGPT Search, Perplexity, Brave Search, Copilot/Bing, and Gemini Free / Gemini Flash.</p>
-          </article>
-          <article class="summary__block reveal">
-            <h3>Not included</h3>
-            <p>API corroboration was not run. Brave Leo/browser-agent was unavailable. Google evidence is Google Search / AI Overview, not Google AI Mode.</p>
-          </article>
+        <div class="verdict-grid">
+          <article class="verdict-card reveal"><span>Working</span><h3>Entity recognition, youth/attendance, outcome measurement, proof retrieval, and owned-source routing.</h3></article>
+          <article class="verdict-card reveal"><span>At risk</span><h3>Broad case-management, alternatives/interception, buyer-risk facts, third-party profile depth, and wrong-entity confusion.</h3></article>
+          <article class="verdict-card reveal"><span>Decision</span><h3>Approve fact-sheet collection and a 30-45 day answer-readiness sprint before public copy or CMS work expands.</h3></article>
         </div>
       </div>
     </section>
 
-    <section class="section split" aria-labelledby="working-title">
-      <div class="container split__grid">
-        <div>
-          <span class="eyebrow">What is working</span>
-          <h2 class="section-title" id="working-title">Owned nFocus sources are already doing useful work.</h2>
-        </div>
-        <div class="card-list">
-          <article class="feature reveal">
-            <span class="feature__tag">Recognition</span>
-            <h3>Answer surfaces generally recognize TraxSolutions as an nFocus product.</h3>
-          </article>
-          <article class="feature reveal">
-            <span class="feature__tag">Owned sources</span>
-            <h3>nFocus product, module, and proof sources already influence answers.</h3>
-          </article>
-          <article class="feature reveal">
-            <span class="feature__tag">Strongest lanes</span>
-            <h3>Youth programs, attendance tracking, outcome measurement, named comparisons, and proof retrieval show the clearest traction.</h3>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section risk" aria-labelledby="risk-title">
+    <section class="section questions" id="questions" aria-labelledby="questions-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">What is at risk</span>
-          <h2 class="section-title" id="risk-title">Broader buyer questions still create answer risk.</h2>
-          <p class="section-lead">The next sprint should make official nFocus sources clearer, safer, and easier to extract before public copy or implementation work expands.</p>
+          <span class="eyebrow">Questions and keywords</span>
+          <h2 class="section-title" id="questions-title">The actual prompt and query set used for the report.</h2>
+          <p class="section-lead">This is the reporting core: the branded, category, comparison, proof, buyer-risk, source-routing, and Google AI Overview queries that shaped the Day 1 baseline.</p>
         </div>
-        <div class="issues">
-          <article class="issue reveal"><span class="issue__tag">Category</span><h3>Broad category prompts are often competitor-led.</h3><p>TraxSolutions performs better near existing owned content than in broad decision-stage discovery.</p></article>
-          <article class="issue reveal"><span class="issue__tag">Fact risk</span><h3>Buyer-critical facts are incomplete or inconsistently sourced.</h3><p>Answer systems may infer pricing, implementation, support, integrations/API, compliance, entity details, and proof from weak sources.</p></article>
-          <article class="issue reveal"><span class="issue__tag">Retrieval</span><h3>Technical extraction issues reduce answer readiness.</h3><p>Payment path clarity, schema gaps, image-alt gaps, animated counter fallback, retrieval metadata, and proof fragmentation remain priorities.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section sprint" id="sprint" aria-labelledby="sprint-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">30-45 day sprint</span>
-          <h2 class="section-title" id="sprint-title">Answer-readiness work after leadership signoff.</h2>
-          <p class="section-lead">The sprint focuses on reducing retrieval friction, publishing approved buyer-stage facts, consolidating proof and entity clarity, and building authority where competitors currently dominate.</p>
-        </div>
-        <div class="streams">
-          <article class="stream reveal"><div class="stream__num">01</div><div><h3>Reduce technical retrieval friction</h3><p>Payment path/routing cleanup, schema, alt text, retrieval metadata, and static/extractable proof elements.</p></div></article>
-          <article class="stream reveal"><div class="stream__num">02</div><div><h3>Publish approved buyer-stage facts</h3><p>Answer-first FAQ and decision content only after sensitive facts and wording are approved by nFocus.</p></div></article>
-          <article class="stream reveal"><div class="stream__num">03</div><div><h3>Consolidate proof and entity clarity</h3><p>Make owned nFocus sources clearer about product, module, proof, and entity relationships.</p></div></article>
-          <article class="stream reveal"><div class="stream__num">04</div><div><h3>Build category and comparison authority</h3><p>Develop approved category/comparison pages where competitor-led answer surfaces currently shape the conversation.</p></div></article>
+        <div class="table-wrap report-table">
+          <table>
+            <thead><tr><th>ID</th><th>Question / keyword query</th><th>Intent</th><th>Competitor set</th><th>Finding note</th></tr></thead>
+            <tbody id="promptRows"></tbody>
+          </table>
         </div>
       </div>
     </section>
 
-    <section class="section timeline" id="approval-path" aria-labelledby="path-title">
+    <section class="section competitors" id="competitors" aria-labelledby="competitors-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Approval path</span>
-          <h2 class="section-title" id="path-title">Decision first. Fact sheet next. Implementation planning after that.</h2>
-          <p class="section-lead">The sequence deliberately keeps WordPress/Elementor/CMS export/staging/source access later, after signoff and only for approved on-page work.</p>
+          <span class="eyebrow">Competitor landscape</span>
+          <h2 class="section-title" id="competitors-title">Who repeatedly frames the category around TraxSolutions.</h2>
+          <p class="section-lead">Competitors are not treated as verified product claims. This is a visibility map of the named alternative/category sets used in the prompt inventory.</p>
         </div>
-        <div class="roadmap">
-          <article class="milestone reveal"><div class="milestone__node"></div><div><div class="milestone__week">Step 01</div><div class="milestone__phase">Leadership review</div></div><p class="milestone__summary">Review the Day 1 selected-surface snapshot, baseline framing, caveats, and sprint plan.</p></article>
-          <article class="milestone reveal"><div class="milestone__node"></div><div><div class="milestone__week">Step 02</div><div class="milestone__phase">Fact-sheet approval</div></div><p class="milestone__summary">nFocus confirms sensitive facts and approved public wording before external factual copy is created.</p></article>
-          <article class="milestone reveal"><div class="milestone__node"></div><div><div class="milestone__week">Step 03</div><div class="milestone__phase">Scoped implementation plan</div></div><p class="milestone__summary">Tony/Emma convert approved facts and sprint scope into an on-page implementation list.</p></article>
-          <article class="milestone reveal milestone--review"><div class="milestone__node"></div><div><div class="milestone__week">Step 04</div><div class="milestone__phase">Access only when needed</div></div><p class="milestone__summary">WordPress/Elementor credentials, CMS export, or staging/source access comes only for approved on-page work.</p></article>
-        </div>
+        <div class="competitor-grid" id="competitorGrid"></div>
       </div>
     </section>
 
-    <section class="section facts" aria-labelledby="facts-title">
+    <section class="section findings" id="findings" aria-labelledby="findings-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Fact-sheet items</span>
-          <h2 class="section-title" id="facts-title">Needed before public copy.</h2>
-          <p class="section-lead">These items stay gated until nFocus approves both source and wording.</p>
+          <span class="eyebrow">Confidence findings</span>
+          <h2 class="section-title" id="findings-title">What the evidence supports with confidence labels.</h2>
+          <p class="section-lead">These are the report findings that should have been in the page from the start.</p>
         </div>
-        <div class="chips" aria-label="Fact-sheet items needed">
-          <span>Pricing policy</span><span>Setup / implementation</span><span>Onboarding / training</span><span>Support model</span><span>Security / privacy / compliance</span><span>Integrations / API / import / export</span><span>Migration / import support</span><span>HQ / address / entity details</span><span>MoneyTrax / payment naming</span><span>PDF URL and date/version</span><span>Named customers</span><span>Outcome metrics and source context</span>
+        <div class="finding-grid" id="confidenceGrid"></div>
+      </div>
+    </section>
+
+    <section class="section source-quality" id="sources" aria-labelledby="sources-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Source quality scoring</span>
+          <h2 class="section-title" id="sources-title">Owned sources help. Weak and wrong-entity sources create risk.</h2>
+          <p class="section-lead">The report distinguishes owned-site strength from directory noise, profile uncertainty, competitor-controlled sources, and wrong-entity source risk.</p>
         </div>
+        <div class="source-score-list" id="sourceRows"></div>
+      </div>
+    </section>
+
+    <section class="section risk" id="risks" aria-labelledby="risks-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Factual-risk register</span>
+          <h2 class="section-title" id="risks-title">Where answer systems can mislead buyers if owned facts stay incomplete.</h2>
+          <p class="section-lead">These are answer-surface behavior risks, not verified product facts. They are the reason the fact sheet comes before public copy.</p>
+        </div>
+        <div class="risk-list" id="riskRows"></div>
+      </div>
+    </section>
+
+    <section class="section plan" id="plan" aria-labelledby="plan-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">30-45 day answer-readiness sprint</span>
+          <h2 class="section-title" id="plan-title">The implementation tickets behind the recommendation.</h2>
+          <p class="section-lead">The sprint is not generic. It maps directly to the observed risks, prompt gaps, source-quality issues, and technical extraction blockers.</p>
+        </div>
+        <div class="ticket-list" id="ticketRows"></div>
       </div>
     </section>
 
     <section class="section guardrails" id="guardrails" aria-labelledby="guardrails-title">
       <div class="container guardrails__grid">
         <div>
-          <span class="eyebrow">Do-not-overclaim guardrails</span>
-          <h2 class="section-title" id="guardrails-title">Observed AI/search answers are answer-surface behavior evidence, not verified product facts.</h2>
+          <span class="eyebrow">Caveats and boundaries</span>
+          <h2 class="section-title" id="guardrails-title">This is selected-surface evidence, not universal truth.</h2>
         </div>
         <div class="guardrail-panel reveal">
-          <p>Do not publish claims about pricing, implementation, integrations/API, support, security/privacy/compliance, HQ/address, MoneyTrax/payment, PDF date/version, named customers, named metrics, or third-party profiles unless nFocus approves source and wording.</p>
-          <p>Do not imply live implementation, source access, publishing, retesting, credential requests, external/client sending, API/vendor/profile work, or CMS/source edits have happened.</p>
+          <p><strong>63/100, Mixed</strong> is a selected-surface Day 1 baseline, not a universal AEO/GEO score. Supporting technical-readiness observations are context, not the basis for broad product scoring.</p>
+          <p>Evidence includes observed answer-surface behavior across Google Search / AI Overview, ChatGPT Search, Perplexity, Brave Search, Copilot/Bing, and Gemini Free / Gemini Flash. API corroboration was not run. Brave Leo/browser-agent was unavailable. Google evidence is Google Search / AI Overview, not Google AI Mode.</p>
+          <p>Observed AI/search answers are answer-surface behavior evidence, not verified product facts. Do not publish claims about pricing, implementation, integrations/API, support, security/privacy/compliance, HQ/address, MoneyTrax/payment, PDF date/version, named customers, named metrics, or third-party profiles unless nFocus approves source and wording.</p>
         </div>
       </div>
     </section>
@@ -211,11 +180,14 @@
     <section class="section decision" id="decision" aria-labelledby="decision-title">
       <div class="container decision__inner">
         <span class="eyebrow">Final decision requested</span>
-        <h2 class="section-title" id="decision-title">Approve the snapshot framing, sprint direction, and fact-sheet-first sequence.</h2>
+        <h2 class="section-title" id="decision-title">Approve fact-sheet collection and the scoped answer-readiness sprint.</h2>
         <p class="next__lead">Requested approval: use the Day 1 selected-surface snapshot and <strong>63/100, Mixed</strong> baseline with the caveats above; move forward with the 30-45 day answer-readiness sprint plan; collect the approved fact sheet before any external factual copy is published; treat website/CMS/source access as a later implementation step only after signoff and approved on-page scope.</p>
+        <div class="chips decision-chips">
+          <span>Pricing policy</span><span>Implementation / setup</span><span>Support model</span><span>Security / privacy / compliance</span><span>Integrations / API</span><span>Migration / import</span><span>HQ / entity details</span><span>Payment naming</span><span>PDF handling</span><span>Named customers</span><span>Outcome metrics</span>
+        </div>
         <div class="decision__actions">
-          <a class="btn btn--primary" href="#top">Return to snapshot</a>
-          <a class="btn btn--ghost" href="#approval-path">Review sequence</a>
+          <a class="btn btn--primary" href="#questions">Back to report data</a>
+          <a class="btn btn--ghost" href="#top">Return to snapshot</a>
         </div>
       </div>
     </section>
@@ -224,10 +196,11 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand"><span class="brand__mark">n</span> nFocus Solutions &middot; TraxSolutions</div>
-      <small>Internal/client-approval presentation artifact. No send, publish, CMS edit, retest, or credential request occurred.</small>
+      <small>Internal/client-approval report artifact. No send, publish, CMS edit, retest, or credential request occurred.</small>
     </div>
   </footer>
 
+  <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

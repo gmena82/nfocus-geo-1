@@ -2,7 +2,8 @@
 
 ## Summary
 
-- Built a polished local approval microsite in the visual language of the prior nFocus proposal.
+- Built a polished local report microsite in the visual language of the prior nFocus proposal.
+- Revised the page from an approval-wrapper into the actual report body: prompts, Google queries, competitors, confidence findings, source-quality scoring, factual risks, and implementation tickets.
 - Output folder: `operator_pack/ananda_executive_approval_web_page/`.
 - No outbound message, upload, share, publish, CMS/source edit, retest, API/vendor/profile work, credential request, commit, push, or deploy occurred.
 
@@ -11,6 +12,7 @@
 - `index.html`
 - `styles.css`
 - `app.js`
+- `data.js`
 - `Hero2.mp4`
 - `Hero-f.mp4`
 - `social-f.jpg`
@@ -39,13 +41,25 @@
 - Page was nonblank and responsive in both captures.
 - Visual alignment checked against the proposal reference screenshot with `view_image`: cinematic dark hero, glass nav, teal/gold accent system, Fraunces + Inter typography, metric band, refined cards, roadmap rows, chips, and responsive mobile behavior are carried forward.
 
+## Report Payload Check
+
+- PASS: 31 prompt/query rows render from `prompt_metadata_overlay.csv`.
+- PASS: 11 selected NF prompt rows are included.
+- PASS: 20 Google Search / AI Overview query rows are included.
+- PASS: 18 competitor/alternative/source-lane cards render from the prompt competitor sets.
+- PASS: 10 confidence findings render from `confidence_labels.csv`.
+- PASS: 11 source-quality rows render from `source_quality_scoring.csv`.
+- PASS: 8 factual-risk rows render from `factual_risk_register.csv`.
+- PASS: 11 implementation tickets render from `implementation_tickets.md`.
+- PASS: Report text includes concrete prompt examples, competitor names, source-quality labels, risk items, and sprint tickets.
+
 ## Required Sequence Check
 
 - PASS: Day 1 selected-surface AEO/GEO snapshot and plan appear first.
 - PASS: Leadership approval and fact-sheet approval come before implementation planning.
 - PASS: Scoped implementation planning appears before website/CMS/source access.
 - PASS: WordPress/Elementor/CMS export/staging/source access is positioned only later, after signoff and only for approved on-page work.
-- PASS: The CTA language is about approval/signoff, not credentials.
+- PASS: The CTA language is about report review and decision/signoff, not credentials.
 
 ## First Viewport Check
 
@@ -78,5 +92,5 @@
 ## Fidelity Notes
 
 - Reference style carried over: fixed glass nav, deep ink hero, video background treatment, teal/gold accents, Fraunces display type, Inter UI/body type, rounded metric band, editorial section rhythm, roadmap rows, chips, and restrained reveal motion.
-- Intentional content deviation: proposal commercial sections were replaced with Ananda approval sequence sections from the approved/current Ananda packet.
+- Intentional content deviation: proposal commercial sections were replaced with the Day 1 AEO/GEO report body and closing approval sequence.
 - No material visual mismatches remain from the requested proposal-style adaptation.

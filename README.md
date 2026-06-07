@@ -1,6 +1,6 @@
 # Ananda Executive Approval Web Page
 
-Polished local approval microsite for the TraxSolutions Day 1 AEO/GEO selected-surface snapshot and 30-45 day answer-readiness sprint.
+Polished local report microsite for the TraxSolutions Day 1 AEO/GEO selected-surface snapshot. The page now includes the actual prompt/query inventory, competitor landscape, confidence findings, source-quality scoring, factual-risk register, implementation tickets, and approval/fact-sheet path.
 
 ## Source Inputs
 
@@ -16,6 +16,7 @@ Polished local approval microsite for the TraxSolutions Day 1 AEO/GEO selected-s
 - `index.html`
 - `styles.css`
 - `app.js`
+- `data.js`
 - `Hero2.mp4`
 - `Hero-f.mp4`
 - `social-f.jpg`
@@ -26,4 +27,4 @@ Polished local approval microsite for the TraxSolutions Day 1 AEO/GEO selected-s
 
 ## Boundary
 
-This is an internal/client-approval presentation artifact only. No outbound message, upload, share, publish, CMS/source edit, retest, API/vendor/profile work, credential request, commit, push, or deploy occurred.
+This is an internal/client-approval report artifact only. No outbound message, upload, share, publish, CMS/source edit, retest, API/vendor/profile work, credential request, commit, push, or deploy occurred.
