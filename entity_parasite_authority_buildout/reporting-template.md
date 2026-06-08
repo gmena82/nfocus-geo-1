@@ -1,6 +1,6 @@
 # Reporting Template
 
-## Weekly Report
+## Biweekly / Monthly Report
 
 Week:
 Date:
@@ -28,7 +28,7 @@ Owner:
 
 - 
 
-## Final 8-Week Report
+## Final Authority Report
 
 ### Executive Summary
 

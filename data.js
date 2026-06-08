@@ -5,7 +5,7 @@ window.REPORT_DATA = {
     "googleQueryCount": 20,
     "surfaceCount": 6,
     "riskCount": 8,
-    "ticketCount": 19,
+    "ticketCount": 18,
     "sourceQualityCount": 11,
     "competitorCount": 47
   },
@@ -1065,8 +1065,8 @@ window.REPORT_DATA = {
       "owner": "web/dev plus content QA",
       "evidence": "NF-R001, technical/internal_link_status.csv, technical_baseline_summary.md",
       "affected": "NF-P17, NF-P22, G20-20, technical extraction",
-      "impact": "buyer-risk and retrieval friction around payment-processing language",
-      "fix": "update links from /moneytrax/ to /traxsolutions/payment-processing/ where appropriate; check duplicate menus/modules",
+      "impact": "An old `/moneytrax/` path appears to be dead while the current payment-processing page works, so buyers, crawlers, and AI answer systems may land on the wrong page or infer confusing payment information.",
+      "fix": "Audit every MoneyTrax/payment link, point approved active links to the current payment-processing URL or add an intentional redirect, and confirm the public naming is client-approved.",
       "criteria": [
         "`/moneytrax/` no longer appears as active product/module link unless intentionally redirected",
         "`/traxsolutions/payment-processing/` returns 200",
@@ -1226,22 +1226,6 @@ window.REPORT_DATA = {
       "retest": "NF-P02, NF-P22, G20-20"
     },
     {
-      "id": "IT-011",
-      "title": "Add API Corroboration Lane When Approved",
-      "priority": "low until approved",
-      "owner": "Codex Desktop/operator",
-      "evidence": "NF-R008, scoring summary, retest plan",
-      "affected": "API corroboration, vendor calibration",
-      "impact": "Day 1 lacks API corroboration; consumer evidence remains sufficient but not API-backed",
-      "fix": "add approved API keys or explicitly keep API out of scope",
-      "criteria": [
-        "API access approved",
-        "API results stored separately from consumer-surface evidence",
-        "no API output is presented as consumer-surface proof"
-      ],
-      "retest": "selected prompt subset only after approval"
-    },
-    {
       "id": "IT-012",
       "title": "Run Entity SEO Audit And Canonical Fact Map",
       "priority": "high",
@@ -1345,20 +1329,20 @@ window.REPORT_DATA = {
     },
     {
       "id": "IT-018",
-      "title": "Add Weekly Reporting And Final Authority Report",
+      "title": "Add Biweekly Or Monthly Reporting And Final Authority Report",
       "priority": "medium",
       "owner": "SEO/operator/reporting",
       "evidence": "Hermes 8-week execution plan; existing retest plan",
       "affected": "client communication, proof of work, iteration decisions",
       "impact": "the expanded authority layer needs proof-backed reporting so it does not become unmeasured posting activity",
-      "fix": "create weekly report and final 8-week report formats covering deliverables completed, indexation, SERP movement, prompt/citation testing, blockers, and next push",
+      "fix": "create biweekly or monthly report and final authority report formats covering deliverables completed, indexation, SERP movement, prompt/citation testing, blockers, and next push",
       "criteria": [
-        "weekly format is usable",
+        "biweekly or monthly format is usable",
         "final report format includes indexation and AI citation evidence",
         "guardrails and blockers are visible",
         "next-step decision is explicit"
       ],
-      "retest": "weekly checks plus final 8-week selected-surface retest"
+      "retest": "biweekly or monthly checks plus final selected-surface retest"
     },
     {
       "id": "IT-019",

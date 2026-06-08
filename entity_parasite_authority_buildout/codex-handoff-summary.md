@@ -26,7 +26,7 @@ Date: 2026-06-08
 - Audited and adopted the existing `operator_pack/answer_readiness_sprint_plan.md` entity SEO and safe third-party authority expansion.
 - Audited and adopted the existing `operator_pack/operator_pack_index.md` authority folder references.
 - Repaired `operator_pack/README.md` boundary language for the approval-page update.
-- Audited and adopted `ananda_executive_approval_web_page/data.js` with 19 implementation tickets.
+- Audited and adopted `ananda_executive_approval_web_page/data.js`; later deliverables-page cleanup removed the separate API corroboration lane, leaving 18 implementation tickets.
 - Audited and adopted `ananda_executive_approval_web_page/deliverables.html` with the expanded authority layer, timeline, and guardrails.
 - Repaired `ananda_executive_approval_web_page/styles.css` so reveal sections remain visible in automated/full-page proof captures.
 
@@ -39,7 +39,7 @@ Date: 2026-06-08
 
 ## Validation Proof
 
-- `data.js` loaded with Node `vm`; `window.REPORT_DATA` exists, `summary.ticketCount` matches the tickets array, and the data contains 19 tickets and 31 prompts.
+- `data.js` loaded with Node `vm`; `window.REPORT_DATA` exists, `summary.ticketCount` matches the tickets array, and the data contains 18 tickets and 31 prompts.
 - Expected authority buildout files checked: 10 present and non-empty.
 - `url-indexation-tracker-template.csv` parsed with 2 template rows and 11 columns after repair.
 - `deliverables.html` required authority/page hooks checked.

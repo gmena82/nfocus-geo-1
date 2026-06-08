@@ -58,9 +58,9 @@
 - PASS: Page 1 presents Day 1 selected-surface AEO/GEO snapshot, baseline framing, caveats, and decision request first.
 - PASS: Page 2 presents the actual results from the testing.
 - PASS: Page 3 presents deliverables and timeline.
-- PASS: Leadership approval and fact-sheet approval come before implementation planning.
-- PASS: Scoped implementation planning appears before website/CMS/source access.
-- PASS: WordPress/Elementor/CMS export/staging/source access is positioned only later, after signoff and only for approved on-page work.
+- PASS: Leadership approval remains the visible decision gate before implementation work.
+- PASS: The previously separate approval, planning, and access setup items are no longer listed as timeline steps.
+- PASS: WordPress/Elementor/CMS export/staging/source access is not requested as a first-step deliverable.
 
 ## Caveats Preserved
 

@@ -27,7 +27,7 @@ The client-safe strategy is:
 | `parasite-seo-checklist.md` | Safe off-site authority rules and execution checklist. |
 | `ai-geo-prompt-map-template.md` | Prompt, fanout, citation-source, gap, and next-action template. |
 | `url-indexation-tracker-template.csv` | Tracker template for owned and third-party URLs. |
-| `reporting-template.md` | Weekly and final reporting format. |
+| `reporting-template.md` | Biweekly/monthly and final reporting format. |
 | `codex-handoff-summary.md` | What changed, exact paths, assumptions, blockers, and next steps. |
 
 ## Boundary

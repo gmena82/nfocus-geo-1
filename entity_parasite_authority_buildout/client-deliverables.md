@@ -66,7 +66,7 @@
 47. URL inventory and indexation tracker.
 48. SERP movement tracker.
 49. AI citation tracker.
-50. Weekly proof-of-work report and final 8-week performance report.
+50. Biweekly or monthly proof-of-work report and final authority performance report.
 
 ## Guardrails
 
