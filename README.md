@@ -33,7 +33,7 @@ Three-page static report website for the TraxSolutions Day 1 AEO/GEO snapshot.
 - `data.js`
 - `Hero2.mp4`
 - `Hero-f.mp4`
-- `social-f.jpg`
+- `social-geo.png`
 - `favicon.svg`
 - `preview-desktop.png`
 - `preview-mobile.png`
