@@ -1,4 +1,4 @@
-# nFocus / TraxSolutions Day 1 AEO/GEO Report Site 
+# nFocus / TraxSolutions Day 1 AEO/GEO Report Site
 
 Three-page static report website for the TraxSolutions Day 1 selected-surface AEO/GEO snapshot.
 
