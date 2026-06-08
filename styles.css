@@ -573,6 +573,10 @@ strong { color: inherit; font-weight: 700; }
   min-width: 0;
   overflow-wrap: anywhere;
 }
+.prompt-card__head .mini-chip {
+  flex: 0 0 auto;
+  justify-self: start;
+}
 .prompt-card__meta {
   display: flex;
   flex-wrap: wrap;
