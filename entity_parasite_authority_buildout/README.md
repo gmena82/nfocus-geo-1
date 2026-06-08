@@ -6,7 +6,7 @@ Source: `/Users/gerardomena/.openclaw/workspace/shared/hermes/outbox/2026-06-08-
 
 ## Purpose
 
-This folder adds the Edward Sturm + Jesper Nissen research synthesis to the nFocus / TraxSolutions SEO + AEO/GEO process.
+This folder adds the quality-first authority synthesis to the nFocus / TraxSolutions SEO + AEO/GEO process.
 
 The client-safe strategy is:
 

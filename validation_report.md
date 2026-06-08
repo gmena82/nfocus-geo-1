@@ -4,8 +4,8 @@
 
 - Reworked the static report website from one long page into three pages:
   - `index.html` for executive summary and decision framing.
-  - `results.html` for actual testing results, questions, keywords, competitors, rankings/source lanes, confidence findings, source quality, and factual risks.
-  - `deliverables.html` for deliverables, implementation tickets, 30-45 day timeline, fact-sheet gates, and retest assumptions.
+  - `results.html` for actual testing results, questions, keywords, competitors, rankings/source evidence, confidence findings, source quality, and factual risks.
+  - `deliverables.html` for deliverables, implementation tickets, Phase 1 and Phase 2 timing, fact-sheet gates, and retest assumptions.
 - Preserved the source-backed report payload in `data.js`.
 - No outbound message, upload, share, publish, CMS/source edit, retest, API/vendor/profile work, credential request, or deploy occurred.
 
@@ -46,16 +46,16 @@
 - PASS: `index.html` is executive-summary focused and does not render the dense testing tables.
 - PASS: `results.html` renders 31 prompt/query rows from `prompt_metadata_overlay.csv`.
 - PASS: `results.html` includes 11 selected NF prompt rows and 20 Google Search / AI Overview query rows.
-- PASS: `results.html` renders 18 competitor/source-lane cards from the prompt competitor sets.
+- PASS: `results.html` renders 18 competitor/source cards from the prompt competitor sets.
 - PASS: `results.html` renders 10 confidence findings from `confidence_labels.csv`.
 - PASS: `results.html` renders 11 source-quality rows from `source_quality_scoring.csv`.
 - PASS: `results.html` renders 8 factual-risk rows from `factual_risk_register.csv`.
-- PASS: `deliverables.html` renders 11 implementation tickets from `implementation_tickets.md`.
-- PASS: `deliverables.html` includes the 30-45 day sprint workstreams, approval path, fact-sheet items, and retest-only-after-live-work guardrail.
+- PASS: `deliverables.html` renders 18 implementation tickets from `data.js`.
+- PASS: `deliverables.html` includes Phase 1/Phase 2 workstreams, approval path, fact-sheet items, and retest-only-after-live-work guardrail.
 
 ## Required Sequence Check
 
-- PASS: Page 1 presents Day 1 selected-surface AEO/GEO snapshot, baseline framing, caveats, and decision request first.
+- PASS: Page 1 presents the Day 1 AEO/GEO snapshot, baseline framing, caveats, and decision request first.
 - PASS: Page 2 presents the actual results from the testing.
 - PASS: Page 3 presents deliverables and timeline.
 - PASS: Leadership approval remains the visible decision gate before implementation work.
@@ -64,7 +64,7 @@
 
 ## Caveats Preserved
 
-- PASS: `63/100, Mixed` is a selected-surface Day 1 baseline, not a universal AEO/GEO score.
+- PASS: `63/100, Visible but under-controlled` is a tested-surface Day 1 baseline, not a universal AEO/GEO score.
 - PASS: Evidence includes observed answer-surface behavior across Google Search / AI Overview, ChatGPT Search, Perplexity, Brave Search, Copilot/Bing, and Gemini Free / Gemini Flash.
 - PASS: Supporting technical-readiness observations are context, not the basis for broad product scoring.
 - PASS: API corroboration was not run.

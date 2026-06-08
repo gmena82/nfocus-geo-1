@@ -1,12 +1,12 @@
 # nFocus / TraxSolutions Day 1 AEO/GEO Report Site 
 
-Three-page static report website for the TraxSolutions Day 1 selected-surface AEO/GEO snapshot.
+Three-page static report website for the TraxSolutions Day 1 AEO/GEO snapshot.
 
 ## Pages
 
 - `index.html` - executive summary, baseline framing, caveats, and decision request.
-- `results.html` - actual testing results: GEO questions, Google keyword queries, competitor/source-lane visibility, confidence findings, source-quality scoring, and factual-risk register.
-- `deliverables.html` - implementation tickets, 30-45 day sprint workstreams, timeline, fact-sheet gates, and retest assumptions.
+- `results.html` - actual testing results: GEO questions, Google keyword queries, competitor/source visibility, confidence findings, source-quality scoring, and factual-risk register.
+- `deliverables.html` - implementation tickets, Phase 1 and Phase 2 timing, timeline, fact-sheet gates, and retest assumptions.
 - `entity_parasite_authority_buildout/` - entity SEO, safe third-party authority, AI/GEO prompt mapping, indexation tracking, reporting, and guardrail deliverables.
 
 ## Source Inputs

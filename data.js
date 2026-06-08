@@ -1,6 +1,6 @@
 window.REPORT_DATA = {
   "summary": {
-    "baseline": "63/100, Mixed",
+    "baseline": "63/100, Visible but under-controlled",
     "nfPromptCount": 11,
     "googleQueryCount": 20,
     "surfaceCount": 6,
@@ -162,7 +162,7 @@ window.REPORT_DATA = {
       "repeat_run_group": "selected_batch_02",
       "confidence_target": "medium",
       "calibration_status": "complete",
-      "notes": "Comparison visibility exists; source quality and buyer-risk facts need caveats."
+      "notes": "Comparison visibility exists; source quality and buyer-decision facts need caveats."
     },
     {
       "prompt_id": "NF-P13",
@@ -228,7 +228,7 @@ window.REPORT_DATA = {
       "repeat_run_group": "selected_batch_02",
       "confidence_target": "high",
       "calibration_status": "complete",
-      "notes": "Highest buyer-risk anchor."
+      "notes": "Highest buyer-decision anchor."
     },
     {
       "prompt_id": "NF-P30",
@@ -700,7 +700,7 @@ window.REPORT_DATA = {
       "primary_evidence": "NF-P01 and NF-P02 across selected ChatGPT Search, Gemini, Perplexity, Brave Search, and Copilot/Bing rows; scoring summary entity confidence 8/10",
       "confidence_label": "high",
       "why": "Repeated across multiple selected answer surfaces with evidence-grade artifacts.",
-      "client_reporting_language": "Repeated selected-surface evidence shows strong branded/entity recognition."
+      "client_reporting_language": "Repeated tested-surface evidence shows strong branded/product recognition."
     },
     {
       "finding_id": "CL-002",
@@ -708,7 +708,7 @@ window.REPORT_DATA = {
       "primary_evidence": "NF-P05 selected rows; G20-01; G20-02; scorecard category visibility 8/15",
       "confidence_label": "high",
       "why": "Appears across multiple surfaces and Google expanded rows.",
-      "client_reporting_language": "Selected-surface evidence shows broad category prompts are still competitor-led."
+      "client_reporting_language": "Tested-surface evidence shows broad category prompts are still competitor-led."
     },
     {
       "finding_id": "CL-003",
@@ -728,11 +728,11 @@ window.REPORT_DATA = {
     },
     {
       "finding_id": "CL-005",
-      "finding": "Buyer-risk fact gaps cause answer engines to fill details from weak, mixed, third-party, or wrong-entity sources.",
-      "primary_evidence": "NF-P22 rows; G20-20; G20-14 caveat; factual-risk count 14",
+      "finding": "Buyer-decision fact gaps cause answer engines to fill details from weak, mixed, third-party, or wrong-entity sources.",
+      "primary_evidence": "NF-P22 rows; G20-20; G20-14 caveat; 8 summarized factual-risk items covering 14 observed risk instances",
       "confidence_label": "high",
       "why": "Risk appears across selected surfaces and Google expanded evidence.",
-      "client_reporting_language": "Buyer-risk rows are answer-surface risk evidence, not verified product truth."
+      "client_reporting_language": "Buyer-decision rows are answer-surface risk evidence, not verified product truth."
     },
     {
       "finding_id": "CL-006",
@@ -756,7 +756,7 @@ window.REPORT_DATA = {
       "primary_evidence": "technical_baseline_summary.md; day1_confirmed_risks_and_fix_backlog.csv NF-R001",
       "confidence_label": "high",
       "why": "Direct HTTP status evidence: /moneytrax/ returned 404 while /traxsolutions/payment-processing/ returned 200.",
-      "client_reporting_language": "A payment-related page path creates routing/retrieval friction; do not frame as a broad payment-product issue."
+      "client_reporting_language": "A payment-related page path creates routing confusion; do not frame as a broad payment-product issue."
     },
     {
       "finding_id": "CL-009",
@@ -782,9 +782,9 @@ window.REPORT_DATA = {
       "observed_in": "NF-P01; NF-P02; NF-P30; G20 positive rows; source recon",
       "score": "4",
       "label": "strong",
-      "rationale": "Owned pages are discoverable and useful, but buyer-risk and comparison facts are not concentrated enough.",
+      "rationale": "Owned pages are discoverable and useful, but buyer-decision and comparison facts are not concentrated enough.",
       "remediation_priority": "high",
-      "next_action": "Add answer-first product narrative, buyer-risk FAQ, comparison/category sections, and approved proof blocks."
+      "next_action": "Add answer-first product narrative, buyer-decision FAQ, comparison/category sections, and approved proof blocks."
     },
     {
       "source_group": "Outcome Measurement Toolkit and impact/proof pages",
@@ -832,9 +832,9 @@ window.REPORT_DATA = {
       "observed_in": "NF-P22; Copilot/Bing; Perplexity; Brave Search",
       "score": "2",
       "label": "weak",
-      "rationale": "These can appear in buyer-risk rows but may carry unverified pricing/security/support claims.",
+      "rationale": "These can appear in buyer-decision rows but may carry unverified pricing/security/support claims.",
       "remediation_priority": "high",
-      "next_action": "Replace reliance with official buyer-risk content and correct directory facts where possible."
+      "next_action": "Replace reliance with official buyer-decision content and correct directory facts where possible."
     },
     {
       "source_group": "Highperformr/ZoomInfo/LinkedIn third-party company profiles",
@@ -864,7 +864,7 @@ window.REPORT_DATA = {
       "label": "harmful",
       "rationale": "Wrong-entity sources create pricing/security/compliance confusion.",
       "remediation_priority": "critical",
-      "next_action": "Add entity-disambiguation language and official buyer-risk facts; monitor retest rows."
+      "next_action": "Add entity-disambiguation language and official buyer-decision facts; monitor retest rows."
     },
     {
       "source_group": "Google Search / AI Overview source cards",
@@ -901,7 +901,7 @@ window.REPORT_DATA = {
       "business_risk": "Buyers may treat unverified generated details as official purchasing facts.",
       "likely_origin": "official source gaps plus third-party/directory retrieval",
       "verification_needed": "client_required",
-      "recommended_fix": "Publish approved buyer-risk FAQ covering pricing policy, implementation, integrations/API, security/privacy/compliance, support, and migration basics.",
+      "recommended_fix": "Publish approved buyer-decision FAQ covering pricing policy, implementation, integrations/API, security/privacy/compliance, support, and migration basics.",
       "owner": "nFocus/client plus SEO/content",
       "priority": "critical",
       "retest_prompt_id": "NF-P22",
@@ -922,7 +922,7 @@ window.REPORT_DATA = {
       "business_risk": "Wrong-entity claims can damage buyer trust and create compliance/security confusion.",
       "likely_origin": "similar names plus incomplete official disambiguation",
       "verification_needed": "client_required",
-      "recommended_fix": "Add explicit TraxSolutions/nFocus disambiguation, official buyer-risk facts, and stronger owned source routing; monitor wrong-entity sources in retest.",
+      "recommended_fix": "Add explicit TraxSolutions/nFocus disambiguation, official buyer-decision facts, and stronger owned source routing; monitor wrong-entity sources in retest.",
       "owner": "SEO/content plus client verification",
       "priority": "critical",
       "retest_prompt_id": "G20-20",
@@ -1052,7 +1052,7 @@ window.REPORT_DATA = {
       "owner": "content/SEO",
       "priority": "high",
       "retest_prompt_id": "NF-P13",
-      "retest_date": "30-45 days after publish",
+      "retest_date": "after Phase 1 publish",
       "status": "open",
       "notes": "This is a visibility/business-risk issue, not a factual-error claim."
     }
@@ -1081,7 +1081,7 @@ window.REPORT_DATA = {
       "priority": "high",
       "owner": "SEO/dev/content",
       "evidence": "NF-R002, schema_blocks.jsonl, technical_baseline_summary.md",
-      "affected": "branded/entity, source routing, buyer-risk prompts",
+      "affected": "branded/entity, source routing, buyer-decision prompts",
       "impact": "fewer explicit product/entity/category hooks for answer systems",
       "fix": "add SoftwareApplication/Product/Service schema using visible, official, approved facts only",
       "criteria": [
@@ -1094,7 +1094,7 @@ window.REPORT_DATA = {
     },
     {
       "id": "IT-003",
-      "title": "Publish Buyer-Risk FAQ / Answer-First Decision Content",
+      "title": "Publish Buyer-Decision FAQ / Answer-First Decision Content",
       "priority": "critical",
       "owner": "content/product marketing/client verification",
       "evidence": "NF-P22, G20-20, factual-risk register",
@@ -1214,7 +1214,7 @@ window.REPORT_DATA = {
       "priority": "high",
       "owner": "SEO/content/entity cleanup/client",
       "evidence": "G20-20, NF-P22, source-quality scoring wrong-entity group",
-      "affected": "branded fact checks, buyer-risk prompts, Google Search / AI Overview",
+      "affected": "branded fact checks, buyer-decision prompts, Google Search / AI Overview",
       "impact": "wrong-entity sources can create pricing/security/compliance confusion",
       "fix": "add explicit disambiguation language on owned pages and schema; align LinkedIn, directories, profiles, and third-party entity details",
       "criteria": [
@@ -1226,12 +1226,12 @@ window.REPORT_DATA = {
       "retest": "NF-P02, NF-P22, G20-20"
     },
     {
-      "id": "IT-012",
+      "id": "IT-011",
       "title": "Run Entity SEO Audit And Canonical Fact Map",
       "priority": "high",
       "owner": "SEO/content/entity cleanup/client",
-      "evidence": "Hermes Edward Sturm + Jesper Nissen synthesis; NF-P01; NF-P02; NF-P22; G20-20",
-      "affected": "branded entity, wrong-entity risk, buyer-risk prompts, source routing",
+      "evidence": "Quality-first SEO synthesis; NF-P01; NF-P02; NF-P22; G20-20",
+      "affected": "branded entity, wrong-entity risk, buyer-decision prompts, source routing",
       "impact": "answer systems need a cleaner canonical understanding of TraxSolutions by nFocus before they can recommend it consistently",
       "fix": "create an entity fact map covering product name, parent company, category, audience, canonical URLs, sameAs targets, approved descriptions, proof sources, and disambiguation language",
       "criteria": [
@@ -1243,28 +1243,28 @@ window.REPORT_DATA = {
       "retest": "NF-P01, NF-P02, NF-P22, G20-20"
     },
     {
-      "id": "IT-013",
-      "title": "Build Buyer Prompt And Query Fanout Map",
+      "id": "IT-012",
+      "title": "Build Buyer Question And Search Map",
       "priority": "high",
       "owner": "SEO/GEO strategy",
-      "evidence": "Hermes query-fanout synthesis; selected Day 1 prompts; Google G20 rows",
+      "evidence": "Quality-first query mapping synthesis; selected Day 1 prompts; Google G20 rows",
       "affected": "category, comparison, alternatives, trust, proof, pricing/security/support prompts",
-      "impact": "AI systems often fan out one buyer prompt into several search-style queries, so the sprint needs to target the whole retrieval ecosystem",
+      "impact": "AI systems often turn one buyer question into several search-style queries, so the sprint needs to cover the full discovery path",
       "fix": "map 25-50 buyer prompts to likely fanout queries, target pages, citation sources, current gaps, and next actions",
       "criteria": [
-        "prompt map covers awareness, consideration, decision, and risk checks",
-        "fanout queries connect to owned and third-party sources",
+        "question map covers awareness, consideration, decision, and risk checks",
+        "search queries connect to owned and third-party sources",
         "target pages are assigned",
         "gaps become tickets or deferred gates"
       ],
       "retest": "selected prompt set plus Google fanout rows"
     },
     {
-      "id": "IT-014",
+      "id": "IT-013",
       "title": "Create Profile Stack And SameAs Cleanup Plan",
       "priority": "high",
       "owner": "marketing/client plus SEO",
-      "evidence": "source quality scoring; G2/profile findings; Hermes entity-stack synthesis",
+      "evidence": "source quality scoring; G2/profile findings; profile-stack synthesis",
       "affected": "third-party validation, entity consistency, review/trust prompts",
       "impact": "thin or inconsistent profile signals leave answer systems to rely on weaker directories and competitor-led sources",
       "fix": "audit and plan updates for LinkedIn, YouTube, G2, Capterra/Software Advice/GetApp, Crunchbase or relevant directories, industry associations, and other approved profiles",
@@ -1277,11 +1277,11 @@ window.REPORT_DATA = {
       "retest": "NF-P02, NF-P19, NF-P22, NF-P30"
     },
     {
-      "id": "IT-015",
+      "id": "IT-014",
       "title": "Build Safe Third-Party Authority Asset Plan",
       "priority": "high",
       "owner": "SEO/content/marketing",
-      "evidence": "Hermes parasite SEO synthesis; source-quality scoring; category and alternatives gaps",
+      "evidence": "safe third-party authority synthesis; source-quality scoring; category and alternatives gaps",
       "affected": "third-party corroboration, category discovery, alternatives, comparison prompts",
       "impact": "trusted third-party surfaces can corroborate TraxSolutions when owned pages alone are not enough for AI/search retrieval",
       "fix": "plan useful, non-spam third-party assets on approved platforms such as LinkedIn, YouTube, Medium/Substack, reputable directories, associations, review sites, partner pages, and real-news/press surfaces only when a real angle exists",
@@ -1294,11 +1294,11 @@ window.REPORT_DATA = {
       "retest": "NF-P04, NF-P05, NF-P13, G20-15, G20-16, G20-17"
     },
     {
-      "id": "IT-016",
+      "id": "IT-015",
       "title": "Produce Branded Image SEO And Media Asset Pack",
       "priority": "medium",
       "owner": "design/content/SEO",
-      "evidence": "Hermes image SEO synthesis; IT-006 alt-text gap",
+      "evidence": "image SEO synthesis; IT-006 alt-text gap",
       "affected": "image search, entity clarity, product/module understanding, accessibility",
       "impact": "branded, crawlable visuals can support entity recognition and search visibility while improving accessibility",
       "fix": "prepare 5-10 approved branded images or media cards with descriptive filenames, alt text, captions, source context, and target page placement",
@@ -1311,11 +1311,11 @@ window.REPORT_DATA = {
       "retest": "image/search extraction audit plus NF-P30"
     },
     {
-      "id": "IT-017",
+      "id": "IT-016",
       "title": "Create URL Inventory And Indexation Tracker",
       "priority": "high",
       "owner": "SEO/operator",
-      "evidence": "Hermes indexation discipline; retest readiness gate",
+      "evidence": "indexation discipline; retest readiness gate",
       "affected": "owned pages, profile pages, off-site assets, proof assets, AI citation tracking",
       "impact": "unindexed or untracked assets cannot reliably influence search or AI retrieval",
       "fix": "track every owned and third-party URL by platform, asset type, target entity/keyword, linked target, indexation status, SERP position, AI citation status, evidence, and next action",
@@ -1328,11 +1328,11 @@ window.REPORT_DATA = {
       "retest": "indexation check plus selected AI/GEO prompt retest"
     },
     {
-      "id": "IT-018",
+      "id": "IT-017",
       "title": "Add Biweekly Or Monthly Reporting And Final Authority Report",
       "priority": "medium",
       "owner": "SEO/operator/reporting",
-      "evidence": "Hermes 8-week execution plan; existing retest plan",
+      "evidence": "Phase 2 authority execution plan; existing retest plan",
       "affected": "client communication, proof of work, iteration decisions",
       "impact": "the expanded authority layer needs proof-backed reporting so it does not become unmeasured posting activity",
       "fix": "create biweekly or monthly report and final authority report formats covering deliverables completed, indexation, SERP movement, prompt/citation testing, blockers, and next push",
@@ -1342,14 +1342,14 @@ window.REPORT_DATA = {
         "guardrails and blockers are visible",
         "next-step decision is explicit"
       ],
-      "retest": "biweekly or monthly checks plus final selected-surface retest"
+      "retest": "biweekly or monthly checks plus final tested-surface retest"
     },
     {
-      "id": "IT-019",
+      "id": "IT-018",
       "title": "Govern Off-Site Authority Risk And Client Approval Gates",
       "priority": "critical",
       "owner": "Tony/Emma/client plus SEO",
-      "evidence": "Hermes quality guardrails; client visibility boundary; factual-risk register",
+      "evidence": "quality guardrails; client visibility boundary; factual-risk register",
       "affected": "all third-party assets, review/profile updates, press/news/listicle claims, community posts",
       "impact": "off-site authority work can create reputation or compliance risk if it uses fake claims, platform abuse, or unapproved buyer facts",
       "fix": "apply explicit no-spam/no-fake-review/no-fake-press/no-platform-abuse rules and require approval before any external profile, post, review, press, directory, or public asset action",
