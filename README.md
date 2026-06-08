@@ -7,6 +7,7 @@ Three-page static report website for the TraxSolutions Day 1 selected-surface AE
 - `index.html` - executive summary, baseline framing, caveats, and decision request.
 - `results.html` - actual testing results: GEO questions, Google keyword queries, competitor/source-lane visibility, confidence findings, source-quality scoring, and factual-risk register.
 - `deliverables.html` - implementation tickets, 30-45 day sprint workstreams, timeline, fact-sheet gates, and retest assumptions.
+- `entity_parasite_authority_buildout/` - entity SEO, safe third-party authority, AI/GEO prompt mapping, indexation tracking, reporting, and guardrail deliverables.
 
 ## Source Inputs
 
@@ -38,6 +39,9 @@ Three-page static report website for the TraxSolutions Day 1 selected-surface AE
 - `preview-mobile.png`
 - `preview-results-desktop.png`
 - `preview-deliverables-desktop.png`
+- `preview-deliverables-codex-authority-2026-06-08.png`
+- `preview-deliverables-codex-authority-full-2026-06-08.png`
+- `entity_parasite_authority_buildout/`
 - `validation_report.md`
 
 ## Boundary

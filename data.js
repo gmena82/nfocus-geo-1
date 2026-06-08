@@ -5,7 +5,7 @@ window.REPORT_DATA = {
     "googleQueryCount": 20,
     "surfaceCount": 6,
     "riskCount": 8,
-    "ticketCount": 11,
+    "ticketCount": 19,
     "sourceQualityCount": 11,
     "competitorCount": 47
   },
@@ -1240,6 +1240,142 @@ window.REPORT_DATA = {
         "no API output is presented as consumer-surface proof"
       ],
       "retest": "selected prompt subset only after approval"
+    },
+    {
+      "id": "IT-012",
+      "title": "Run Entity SEO Audit And Canonical Fact Map",
+      "priority": "high",
+      "owner": "SEO/content/entity cleanup/client",
+      "evidence": "Hermes Edward Sturm + Jesper Nissen synthesis; NF-P01; NF-P02; NF-P22; G20-20",
+      "affected": "branded entity, wrong-entity risk, buyer-risk prompts, source routing",
+      "impact": "answer systems need a cleaner canonical understanding of TraxSolutions by nFocus before they can recommend it consistently",
+      "fix": "create an entity fact map covering product name, parent company, category, audience, canonical URLs, sameAs targets, approved descriptions, proof sources, and disambiguation language",
+      "criteria": [
+        "canonical entity facts approved",
+        "sameAs/profile targets listed",
+        "wrong-entity disambiguation included",
+        "sensitive facts remain gated"
+      ],
+      "retest": "NF-P01, NF-P02, NF-P22, G20-20"
+    },
+    {
+      "id": "IT-013",
+      "title": "Build Buyer Prompt And Query Fanout Map",
+      "priority": "high",
+      "owner": "SEO/GEO strategy",
+      "evidence": "Hermes query-fanout synthesis; selected Day 1 prompts; Google G20 rows",
+      "affected": "category, comparison, alternatives, trust, proof, pricing/security/support prompts",
+      "impact": "AI systems often fan out one buyer prompt into several search-style queries, so the sprint needs to target the whole retrieval ecosystem",
+      "fix": "map 25-50 buyer prompts to likely fanout queries, target pages, citation sources, current gaps, and next actions",
+      "criteria": [
+        "prompt map covers awareness, consideration, decision, and risk checks",
+        "fanout queries connect to owned and third-party sources",
+        "target pages are assigned",
+        "gaps become tickets or deferred gates"
+      ],
+      "retest": "selected prompt set plus Google fanout rows"
+    },
+    {
+      "id": "IT-014",
+      "title": "Create Profile Stack And SameAs Cleanup Plan",
+      "priority": "high",
+      "owner": "marketing/client plus SEO",
+      "evidence": "source quality scoring; G2/profile findings; Hermes entity-stack synthesis",
+      "affected": "third-party validation, entity consistency, review/trust prompts",
+      "impact": "thin or inconsistent profile signals leave answer systems to rely on weaker directories and competitor-led sources",
+      "fix": "audit and plan updates for LinkedIn, YouTube, G2, Capterra/Software Advice/GetApp, Crunchbase or relevant directories, industry associations, and other approved profiles",
+      "criteria": [
+        "profiles are listed with current status",
+        "approved description/bio language is reused",
+        "sameAs candidates are validated",
+        "unapproved profile changes remain gated"
+      ],
+      "retest": "NF-P02, NF-P19, NF-P22, NF-P30"
+    },
+    {
+      "id": "IT-015",
+      "title": "Build Safe Third-Party Authority Asset Plan",
+      "priority": "high",
+      "owner": "SEO/content/marketing",
+      "evidence": "Hermes parasite SEO synthesis; source-quality scoring; category and alternatives gaps",
+      "affected": "third-party corroboration, category discovery, alternatives, comparison prompts",
+      "impact": "trusted third-party surfaces can corroborate TraxSolutions when owned pages alone are not enough for AI/search retrieval",
+      "fix": "plan useful, non-spam third-party assets on approved platforms such as LinkedIn, YouTube, Medium/Substack, reputable directories, associations, review sites, partner pages, and real-news/press surfaces only when a real angle exists",
+      "criteria": [
+        "platforms are approved and client-safe",
+        "each asset has a real buyer purpose",
+        "no fake reviews, fake press, fake identities, or mass-spun content",
+        "link and indexation plan exists"
+      ],
+      "retest": "NF-P04, NF-P05, NF-P13, G20-15, G20-16, G20-17"
+    },
+    {
+      "id": "IT-016",
+      "title": "Produce Branded Image SEO And Media Asset Pack",
+      "priority": "medium",
+      "owner": "design/content/SEO",
+      "evidence": "Hermes image SEO synthesis; IT-006 alt-text gap",
+      "affected": "image search, entity clarity, product/module understanding, accessibility",
+      "impact": "branded, crawlable visuals can support entity recognition and search visibility while improving accessibility",
+      "fix": "prepare 5-10 approved branded images or media cards with descriptive filenames, alt text, captions, source context, and target page placement",
+      "criteria": [
+        "assets use approved brand/product facts",
+        "filenames and alt text are descriptive, not stuffed",
+        "captions reinforce source-backed proof or module context",
+        "image placement and tracking are documented"
+      ],
+      "retest": "image/search extraction audit plus NF-P30"
+    },
+    {
+      "id": "IT-017",
+      "title": "Create URL Inventory And Indexation Tracker",
+      "priority": "high",
+      "owner": "SEO/operator",
+      "evidence": "Hermes indexation discipline; retest readiness gate",
+      "affected": "owned pages, profile pages, off-site assets, proof assets, AI citation tracking",
+      "impact": "unindexed or untracked assets cannot reliably influence search or AI retrieval",
+      "fix": "track every owned and third-party URL by platform, asset type, target entity/keyword, linked target, indexation status, SERP position, AI citation status, evidence, and next action",
+      "criteria": [
+        "tracker exists and parses as CSV",
+        "each approved asset has a row",
+        "indexation status and evidence are captured",
+        "unindexed assets have next actions"
+      ],
+      "retest": "indexation check plus selected AI/GEO prompt retest"
+    },
+    {
+      "id": "IT-018",
+      "title": "Add Weekly Reporting And Final Authority Report",
+      "priority": "medium",
+      "owner": "SEO/operator/reporting",
+      "evidence": "Hermes 8-week execution plan; existing retest plan",
+      "affected": "client communication, proof of work, iteration decisions",
+      "impact": "the expanded authority layer needs proof-backed reporting so it does not become unmeasured posting activity",
+      "fix": "create weekly report and final 8-week report formats covering deliverables completed, indexation, SERP movement, prompt/citation testing, blockers, and next push",
+      "criteria": [
+        "weekly format is usable",
+        "final report format includes indexation and AI citation evidence",
+        "guardrails and blockers are visible",
+        "next-step decision is explicit"
+      ],
+      "retest": "weekly checks plus final 8-week selected-surface retest"
+    },
+    {
+      "id": "IT-019",
+      "title": "Govern Off-Site Authority Risk And Client Approval Gates",
+      "priority": "critical",
+      "owner": "Tony/Emma/client plus SEO",
+      "evidence": "Hermes quality guardrails; client visibility boundary; factual-risk register",
+      "affected": "all third-party assets, review/profile updates, press/news/listicle claims, community posts",
+      "impact": "off-site authority work can create reputation or compliance risk if it uses fake claims, platform abuse, or unapproved buyer facts",
+      "fix": "apply explicit no-spam/no-fake-review/no-fake-press/no-platform-abuse rules and require approval before any external profile, post, review, press, directory, or public asset action",
+      "criteria": [
+        "approval gate documented",
+        "unsafe tactics are explicitly excluded",
+        "external actions remain blocked until approved",
+        "every asset has a source and risk status"
+      ],
+      "retest": "preflight before any external asset execution"
     }
   ],
   "competitors": [
