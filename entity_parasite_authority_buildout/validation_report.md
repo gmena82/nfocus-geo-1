@@ -12,7 +12,7 @@ Validated the local `entity_parasite_authority_buildout/` deliverables and the A
 - `data.js` was loaded with Node `vm`; `window.REPORT_DATA` exists, `summary.ticketCount` matches the ticket array, and the page data contains 18 tickets and 31 prompts.
 - The 10 expected authority buildout files exist and are non-empty.
 - `url-indexation-tracker-template.csv` parses with 2 template rows and 11 columns matching the header.
-- `deliverables.html` contains required authority hooks: `authority-grid`, `ticketRows`, `data.js`, `app.js`, `Safe off-site asset plan`, and `External claims stay gated`.
+- `deliverables.html` contains required authority hooks: `authority-grid`, `ticketRows`, `data.js`, `app.js`, and `Safe off-site asset plan`.
 - Playwright CLI rendered the local `deliverables.html` page from `file://` and captured screenshots.
 
 ## Result
