@@ -46,22 +46,26 @@
     target.innerHTML = D.prompts.map((p) => {
       const isGoogle = p.prompt_id.startsWith("G20-");
       return `
-        <tr>
-          <td><span class="row-id ${isGoogle ? "row-id--google" : ""}">${escapeHtml(p.prompt_id)}</span></td>
-          <td>
-            <strong>${escapeHtml(p.prompt_text)}</strong>
-            <div class="row-sub">${escapeHtml(p.buyer_segment)} / ${escapeHtml(p.persona)}</div>
-          </td>
-          <td>
-            <span class="mini-chip">${escapeHtml(p.intent || p.prompt_category)}</span>
-            <div class="row-sub">${escapeHtml(p.funnel_stage)} / ${escapeHtml(p.use_case)}</div>
-          </td>
-          <td>${chips(splitList(p.competitor_set), 4) || '<span class="row-sub">none primary</span>'}</td>
-          <td>
-            ${escapeHtml(p.notes)}
-            <div class="row-sub">${escapeHtml(compact(p.expected_ideal_answer, 120))}</div>
-          </td>
-        </tr>
+        <article class="prompt-card reveal">
+          <div class="prompt-card__id">
+            <span class="row-id ${isGoogle ? "row-id--google" : ""}">${escapeHtml(p.prompt_id)}</span>
+          </div>
+          <div class="prompt-card__body">
+            <div class="prompt-card__head">
+              <h3>${escapeHtml(p.prompt_text)}</h3>
+              <span class="mini-chip">${escapeHtml(p.intent || p.prompt_category)}</span>
+            </div>
+            <div class="prompt-card__meta">
+              <span>${escapeHtml(p.buyer_segment)} / ${escapeHtml(p.persona)}</span>
+              <span>${escapeHtml(p.funnel_stage)} / ${escapeHtml(p.use_case)}</span>
+            </div>
+            <div class="prompt-card__competitors">
+              ${chips(splitList(p.competitor_set), 5) || '<span class="row-sub">none primary</span>'}
+            </div>
+            <p>${escapeHtml(p.notes)}</p>
+            <div class="row-sub">${escapeHtml(compact(p.expected_ideal_answer, 170))}</div>
+          </div>
+        </article>
       `;
     }).join("");
   }
